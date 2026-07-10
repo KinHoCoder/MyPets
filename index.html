@@ -2,17 +2,63 @@
 	<head>
 		<!-- <title>MyPets</title><link rel="icon" type="image/png" href="icon.png"> -->
 		<style>
+			#Title {
+				display: block;
+				width: 99%;
+				height: 8%;
+				background-color: #3498db;
+				text-align: center;
+				color: #fff;
+				position: fixed;
+				border: 2px solid orange;
+				padding: 0px;		
+			}
+			#Contact {
+				width: 99%;
+				background-color: #3498db;
+				color: #fff;
+				text-align: center;
+				border: 2px solid orange;
+				position: fixed;
+				padding: 0px;
+			}
 			#CreatorPets {
 				color: white;
+				border: 3px solid #FFA310;
+				padding: 8px;
 				background-color: purple;
 			}
 			#MainGoal {
 				color: brown;
+				border: 3px solid #39FF14;
+				padding: 8px;
+				display: flex;
+				flex-wrap: wrap;
+				flex-grow: 1;
+				flex-direction: column;
 				background-color: pink;
+			}
+			#AppChecklist {
+				color: red;
+				border: 3px solid #FFA310;
+				padding: 8px;
+				display: flex;
+				flex-wrap: wrap;
+				flex-grow: 1;
+				flex-direction: column;
+				background-color: #FFFFC5;
 			}
 			#Buttons {
 				color: green;
+				border: 3px solid #39FF14;
+				padding: 8px;
+				display: flex;
+				flex-wrap: wrap;
+				flex-grow: 1;
+				flex-direction: row;
 				background-color: blue;
+				width: 100 px;
+				transition: height 3s, width 3s;
 			}
 			body {
 				background-color: gray;
@@ -20,12 +66,23 @@
 		</style>
 	</head>
 	<body>
+		<div id="Title">
+			<h1> MyPets LLC </h1>
+		</div>
+		<div id="Contact">
+			Contact Us: mypets@gmail.com | Phone Number: +1 561-328-1045
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
 		<!-- Will be used to show pictures of my bunnies and other pets -->
-		<img src="aibo-dog.jpeg" height="350px" width="600px" align="right" style="border: 5px solid cyan" alt="Three Bottles: Two Black, One White, Each with the Text, Bo'oh'o'wa'er. They are on a table in a red sparkly background."/>
-		<img src="fish-tank.jpeg" height="300px" width="400px" align="right" style="border: 5px solid green" alt="Diverse fish in a tank, similar to what our old fish tank was"/>
-		<img src="RedEaredSlider05.jpeg" height="300px" width="440px" align="right" style="border: 5px solid red" alt="Full-body shot of Red-necked turtle, the species that Bagel and Avocado were"/>
-		<img src="Creme-dArgente-Rabbit.png" height="270px" width="430px" align="right" style="border: 5px solid orange" alt="The Creme d'Argente breed, the closest looking to Mochi that I found"/>
-		<img src="Dwarf-Hotot.webp" height="315px" width="430px" align="right" style="border: 5px solid yellow" alt="A Dwarf Hotot bunny, the exact species of Bun-Bun"/>
+			<img src="aibo-dog.jpeg" height="350px" width="600px" align="right" style="border: 5px solid cyan" alt="Three Bottles: Two Black, One White, Each with the Text, Bo'oh'o'wa'er. They are on a table in a red sparkly background."/> </div>
+			<img src="fish-tank.jpeg" height="300px" width="400px" align="right" style="border: 5px solid green" alt="Diverse fish in a tank, similar to what our old fish tank was"/> </div>
+			<img src="RedEaredSlider05.jpeg" height="300px" width="440px" align="right" style="border: 5px solid red" alt="Full-body shot of Red-necked turtle, the species that Bagel and Avocado were"/> </div>
+			<img src="Creme-dArgente-Rabbit.png" height="270px" width="430px" align="right" style="border: 5px solid orange" alt="The Creme d'Argente breed, the closest looking to Mochi that I found"/> </div>
+			<img src="Dwarf-Hotot.webp" height="315px" width="430px" align="right" style="border: 5px solid yellow" alt="A Dwarf Hotot bunny, the exact species of Bun-Bun"/> </div>
 		<!-- Little Informational Description -->
 		<div id="CreatorPets">
 			<p><sup><big>Welcome to the MyPets page! This is
@@ -87,23 +144,30 @@
 				<br /> interface and features are supposed to be both adult and child friendly.
 				</p>
 			<hr width="1500px"/>
+		</div>
+		<div id="AppChecklist">
 			<!-- A little checklist for me and others to see -->
 			<b><h2>Updates & Features</h2></b>
 			<p><i>Currently, the first app has not been created yet. Come back to see its progress below:</i></p>
-			<p>Right this moment, I am working on the first app MyBunny.
-				<br /> I have just finished the Fluffy Survey and working on the main interface!
+			<p>Right this moment, I am working on the first app, MyBunny:
+				<br /> After finishing the Main Interface, I am simultaneously working on both of the feed 
+				<br /> and play features. For the first, I am waiting on multiple experts to collect some
+				<br /> data on other bunnies and their food habits. For the second, I am currently working
+				<br /> on the survey, which then I will make the feed home and take advantage from those same experts.
 				</p>
 			<sub><h3>Road to App Store!</h3></sub>
-			<p><del>Fluffy Survey (600 lines)</del></p>
-			<p><del>Main Interface (200 lines)</del></p>
-			<p><sub>Feed Feature (Waiting on Experts)</sub></p>
-			<p><sub>Play Feature (Working on Survey)</sub></p>
-			<p><ins>Schedule</ins></p>
-			<p><ins>Settings</ins></p>
-			<p><ins>Decorations/Credits</ins></p>
+			<ol>
+				<li><del>Fluffy Survey (600 lines)</del></li>
+				<li><del>Main Interface (200 lines)</del></li>
+				<li><sub>Feed Feature (Waiting on Experts, ~700 lines)</sub></li>
+				<li><sub>Play Feature (Working on Survey)</sub></li>
+				<li><ins>Schedule</ins></li>
+				<li><ins>Settings</ins></li>
+				<li><ins>Decorations/Credits</ins></li>
+			</ol>
 			<hr width="1500px"/>
-			<!-- Remove when finished -->
 		</div>
+			<!-- Remove when finished -->
 		<div id="Buttons">
 			<button>
 				<a href="file:///C:/Users/Webcamp/Desktop/test.html" target="_blank"> To Self: Go here for HTML Cheat Sheet </a>
